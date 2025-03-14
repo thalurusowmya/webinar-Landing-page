@@ -1,0 +1,729 @@
+/*--------- Google Font import -----------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	padding: 60px 10px;
+}
+
+/* navbar starts */
+.navbar .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: #052415;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+.nav-link {
+  list-style: none;
+  display: flex;
+}
+
+.nav-link li {
+  margin: 0 15px;
+}
+
+.nav-link a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px;
+}
+.fa-react{
+	color: #fff;
+}
+.navbar a:hover{
+	color: #DF6D2D;
+}
+/* navbar ends */
+
+/*---------- Header section start ----------*/
+.header {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 2), rgba(53, 111, 86, 0.3)), url(img/background.jpg);
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+  }
+  
+  .header .container {
+	height: 100vh;
+	display: flex;
+  }
+  
+  .header .container .row {
+	gap: 5rem;
+  }
+  
+  .header .container .row .header-content {
+  
+	width: 100%;
+  }
+.main-heading {
+	color: #fff;
+	font-size: 2.2rem;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: center;
+	padding: 20px 0;
+
+}
+.act-fast{
+  color: #fff;
+}
+
+.white {
+	color: #fff;
+}
+
+.inside-row {
+	display: flex;
+	text-align: center;
+	justify-content: flex-start;
+  	gap: 3rem;
+}
+
+.inside-row .col .date,
+.inside-row .col .time {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: #fff;
+	font-weight: 600;
+	font-size: 1.1rem;
+	gap: 0.5rem;
+}
+.inside-row .col {
+	width: fit-content;
+  }  
+
+.date i,
+.time i {
+	color: #fff;
+	background: #DF6D2D;
+	font-size: 1.6rem;
+	padding: 8px;
+	border: none;
+	border-radius: 0.3rem;
+	margin: 1rem 0;
+}
+
+.para-line {
+	font-size: 1rem;
+	text-align: left;
+	padding: 1.5rem 0;
+}
+
+.header-content .main-heading {
+  /* margin-top: 50px; */
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.header-content .main-heading span {
+  color: #DF6D2D;
+}
+/*---------- Header section end ----------*/
+
+/*---------- skill section start ----------*/
+.skills {
+	background: #E8EBE9;
+}
+.heading {
+	color: #0d3421;
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: center;
+}
+.skill-row{
+	display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: center;
+	align-items: center;
+  
+}
+.skill-row .skill-box {
+	
+	width: 200px;
+	height: 300px;
+	margin: 0 5px;
+	border-radius: 10px;
+  border: 2px solid black;
+	
+}
+.skill-box:hover {
+	cursor: pointer;
+	transform: translateY(-15px);
+	transition: 0.5s;
+	box-shadow: 7px 17px 5px 0px rgba(14, 5, 5, 0.38);
+	-webkit-box-shadow: 7px 17px 5px 0px rgba(14, 5, 5, 0.38);
+	-moz-box-shadow: 7px 17px 5px 0px rgba(14, 5, 5, 0.38);
+}
+
+.skill-row .col {
+	background: #f7eae2;
+	margin: 1rem 0.5rem;
+	padding: 1rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+	padding: 2.5rem;
+}
+
+.skill-row .col .skill-heading {
+	font-size: 1rem;
+	font-weight: 600;
+	margin-top: -25px;
+}
+
+.skill-row .col .para-line {
+	margin: 0;
+	padding: 0;
+	font-size: small;
+	max-width: 100%;
+	text-align: left;
+}
+
+.skills .container .para-line {
+	text-align: center;
+	max-width: 55%;
+	margin: 0 auto;
+}
+.skill-row .col .para-line {
+	max-width: 100%;
+	text-align: left;
+}
+
+
+/*---------- skill section end ----------*/
+
+
+/*----------- host section starts ----------*/
+
+#host{
+	background-color: #f7f8f7;
+}
+.host-feature {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+.host-feature .feature-name {
+	font-size: 1.1rem;
+	font-weight: 600;
+	padding-left: 0.8rem;
+}
+
+.host-img:hover{
+	cursor: pointer;
+	transform: translateY(-15px);
+	transition: 0.5s;
+	box-shadow: 7px 17px 5px 0px rgba(14, 5, 5, 0.38);
+	-webkit-box-shadow: 7px 17px 5px 0px rgba(14, 5, 5, 0.38);
+	-moz-box-shadow: 7px 17px 5px 0px rgba(14, 5, 5, 0.38);
+}
+
+.host .container .row {
+	gap: 3rem;
+}
+
+.host-profile-col {
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.host-img {
+	border: none;
+	border-radius: 10px;
+}
+
+.host-content-col .heading{
+	text-align: left;
+	margin-left: -40px;
+	margin-top: -25px;
+}
+
+.host-content-col .para-line {
+	margin-top: -20px;
+	padding: 0;
+}
+
+/*----------- host section ends ----------*/
+/* student review section starts */
+
+#review{
+	background-color: #e1e4e2;
+	height: 700px;
+}
+.review-cont {
+	width: 100%;
+	height: 500px;
+	display: flex;
+  flex-wrap: wrap;
+  gap: 15px; 
+  justify-content: center;
+	align-items: center;
+}
+.student {
+	width: 400px;
+	height: 230px;	
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 10px;
+	display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+  /* border: 2px solid black; */
+
+	
+}
+.student .user-review{
+	margin-top: -10px;
+	padding: 0 5px 0 15px;
+}
+
+.head .heading{
+	font-size: x-large;
+	/* margin-top: 40px; */
+}
+.heading{
+	padding: 40px;
+}
+
+.student .user{
+	display: flex;
+	gap: 10px;
+	font-size: xx-large;
+	padding: 10px 30px 0 15px;
+}
+.student .user-name{
+	font-size: large;
+	margin-top: 10px;
+}
+/* student review section ends */
+
+/* register section starts */
+#register{
+	background-color: #f0f1f0;
+}
+.form-area{
+	width: 60%;
+	margin-left: 250px;
+}
+
+.form-area {
+	background: #e6dad5;
+	padding: 1.2rem;
+  border-radius: 30px;
+}
+
+.form-area .form-heading {
+	font-size: 1.6rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.form-area hr {
+	color: #d4d4d4;
+	margin: 20px 0;
+}
+
+.input-field {
+	margin: 1rem 0;
+	padding: 0 0.5rem;
+}
+
+.input-field label {
+	font-size: 0.9rem;
+}
+
+.input-field input {
+	width: 100%;
+	background: #fff;
+	border: 1px solid #d4d4d4;
+	font-size: 0.9rem;
+	font-weight: 400;
+	padding: 0.8rem;
+}
+  
+  .booking-form .form-row .col {
+	width: 100%;
+  }
+  
+  .form-area {
+	padding: 2rem;
+  }
+  
+  .booking-form .form-row .col .input-field {
+	margin-bottom: 0;
+  }
+  
+  .booking-form .input-field {
+	margin: 1rem;
+  }
+  
+  .booking-form .input-field .btn {
+	background-color: #DF6D2D;
+	color: #fff;
+	width: 100%;
+	font-size: large;
+  }
+.btn {
+	display: block;
+	width: 100%;
+	background-color: #DF6D2D;
+	border: none;
+	border-radius: 0.2rem;
+	padding: 1rem;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.btn:hover {
+	transform: translateY(10px);
+}
+
+.btn a {
+	color: #fff;
+	font-size: 0.8rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/* register section ends */
+
+/*----------- Footer section start ------------*/
+.footer .container {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(49, 30, 3, 0.5)), url(img/footer.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.footer .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 8rem 0;
+}
+
+.footer .container .heading {
+	color: #fff;
+}
+
+.footer .btn {
+	background-color: #DF6D2D;
+	color: #fff;
+	font-weight: 500;
+	text-transform: uppercase;
+	width: fit-content;
+	margin-top: 20px;
+	transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.footer {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(49, 30, 3, 0.8)), url(img/footer.jpg);
+	background-position: center center;
+}
+
+  .container .email{
+	font-size: medium;
+	color: #fff;
+  }
+  .fa-solid{
+	color: #DF6D2D;
+  }
+  .email a{
+	color: #DF6D2D;
+	text-decoration: none
+  }
+  .email a:hover{
+	color: #f6f6f6;
+	text-decoration: underline;
+	cursor: pointer;
+  }
+
+/*----------- Footer section end ------------*/
+
+/* Responsive Design */
+@media screen and (min-width: 789px) {
+	.container {
+		padding: 5rem;
+	}
+
+	.row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.row .col {
+		width: 100%;
+	}
+
+	.heading {
+		font-size: 2.4rem;
+	}
+}
+
+
+
+@media screen and (max-width: 568px) {
+	.navbar .container .nav-link {
+	  display: none;
+	}
+	.header .container {
+	  flex-direction: column;
+	  align-items: center;
+	  text-align: center;
+	  height: auto;
+	  padding: 60px 10px;
+	}
+  
+	.container .row .header-content .main-heading {
+	  font-size: x-large;
+	  text-align: center;
+	}
+  
+	.container .row .header-content .inside-row .date{
+	  flex-direction: row;
+	  align-items: center;
+	  text-align: left;
+	  font-size: small;
+	  margin-left: 30px;
+	}
+	.container .row .header-content .inside-row .time{
+		flex-direction: row;
+		align-items: center;
+		text-align: left;
+		font-size: small;
+		
+	  }
+	  .container .row .header-content .inside-row .time i,
+	  .container .row .header-content .inside-row .date i{
+		font-size: small;
+	  }
+	  .container .row .header-content .attend{
+		margin-left: -150px;
+		font-size: medium;
+	  }
+	  .container .row .header-content .para-line{
+		font-size: small;
+	  }
+	.skills .container .para-line {
+	  max-width: 90%;
+	}
+  
+	.skill-row {
+	  flex-direction: column;
+	  align-items: center;
+	}
+	.container .skill-row .skill-box{
+		width: 300px;
+	}
+  
+	.skill-row .skill-box {
+	  width: 100%;
+	  max-width: 250px;
+	  height: 200px;
+	}
+	.host .container .row .col .para-line{
+		margin-left: 25px;
+	}
+	.host .container .row {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	.host-content-col .heading {
+	  text-align: center;
+	}
+  
+	.host-profile-col {
+	  justify-content: center;
+	}
+
+	#review{
+		height: 1700px;
+	}
+  
+	.review-cont {
+	  flex-direction: column;
+	  height: auto;
+	}
+  
+	.student {
+	  width: 90%;
+	}
+	
+  
+	.form-area {
+		width: 400px;
+    padding: 0.3rem;
+	}
+  
+	.footer .container {
+	  padding: 4rem 1rem;
+	  justify-content: center;
+	  align-items: center;
+
+	}
+	.footer .container .email{
+		text-align: center;
+	}
+  }
+  
+  @media screen and (max-width: 900px) {
+	.navbar .container .nav-link {
+	  display: none;
+	}
+	.header .container {
+	  flex-direction: column;
+	  align-items: center;
+	  text-align: center;
+	  height: auto;
+	  padding: 60px 10px;
+	}
+  
+	.container .row .header-content .main-heading {
+	  font-size: larger;
+	  text-align: center;
+	}
+  
+	.container .row .header-content .inside-row .date{
+	  flex-direction: row;
+	  align-items: center;
+	  text-align: left;
+	  font-size: small;
+	  margin-left: 30px;
+	}
+	.container .row .header-content .inside-row .time{
+		flex-direction: row;
+		align-items: center;
+		text-align: left;
+		font-size: small;
+		
+	  }
+	  .container .row .header-content .inside-row .time i,
+	  .container .row .header-content .inside-row .date i{
+		font-size: small;
+	  }
+	  .container .row .header-content .attend{
+		font-size: medium;
+	  }
+	  .container .row .header-content .para-line{
+		font-size: small;
+	  }
+	.skills .container .para-line {
+	  max-width: 90%;
+	}
+  
+	.skill-row {
+	  flex-direction: row;
+	  align-items: center;
+	}
+	.container .skill-row .skill-box{
+		width: 300px;
+	}
+  
+	.skill-row .skill-box {
+	  width: 100%;
+	  max-width: 250px;
+	  height: 200px;
+	}
+	.host .container .row .col .para-line{
+		margin-left: 25px;
+	}
+	.host .container .row {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	.host-content-col .heading {
+	  text-align: center;
+	}
+  
+	.host-profile-col {
+	  justify-content: center;
+	}
+
+	#review{
+		height: 1700px;
+	}
+  
+	.review-cont {
+	  flex-direction: column;
+	  height: auto;
+	}
+  
+	.student {
+	  width: 90%;
+	}
+	
+  
+	.form-area {
+		width: 80%; 
+		max-width: 400px; 
+		margin: 0 auto;
+		padding: 1rem;
+	}
+  
+	.footer .container {
+	  padding: 4rem 1rem;
+	  justify-content: center;
+	  align-items: center;
+
+	}
+	.footer .container .email{
+		text-align: center;
+	}
+  }
+
+  @media screen and (min-width: 900px) and (max-width:1275px){
+	#review{
+		height: 1000px;
+	}
+  }
+  
+  
