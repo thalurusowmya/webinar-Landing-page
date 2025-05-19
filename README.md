@@ -1,8 +1,7 @@
-# webinar-Landing-page
+
+# Webinar Landing Page
 
 view webpage :- https://webinar-land-page.netlify.app/
-
-# React JS Webinar Landing Page
 
 A modern, responsive landing page for a React JS webinar event. This landing page is designed to attract potential participants and provide them with all necessary information about the webinar.
 
